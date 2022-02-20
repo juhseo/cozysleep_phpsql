@@ -1,0 +1,280 @@
+* database
+-> create database cozysleep;
+-> show databases; 확인하기
+
+* table01 - main 베스트 셀러 
+create table bestseller(
+    m_no int primary key auto_increment,
+    name varchar(90) not null,
+    price varchar(20) not null,
+    manufacture varchar(50) not null,
+    imgsrc varchar(80) not null,
+    shortDesc varchar(80) not null,
+    description varchar(80) not null
+); -> *******입력완료 !!!!!!!*******
+
+
+* table02 - 침구류 bedding
+create table bedding(
+    no int primary key auto_increment,
+    name varchar(90) not null,
+    price varchar(20) not null,
+    manufacture varchar(50) not null,
+    imgsrc varchar(80) not null,
+    shortDesc varchar(80) not null,
+    description varchar(80) not null
+)
+<!-- * table03 -고객 customer
+create table customer(
+    m_no int primary key auto_increment,
+    id varchar(10) not null,
+    pw varchar(10) not null,
+    name varchar(20) not null,
+    date datetime not null,
+); -->
+*table04 - 홈 & 데코
+create table homedeco(
+    id int primary key auto_increment,
+    name varchar(90) not null,
+    price int not null,
+    manufacture varchar(50) not null,
+    imgsrc varchar(80) not null,
+    shortDesc varchar(80) not null,
+    description varchar(80) not null
+);
+*table05 - 회원가입
+create table member(
+    m_no int primary key auto_increment,
+    name varchar(30) not null,
+    id varchar(8) not null,
+    pw varchar(8) not null,
+    email varchar(50) not null,
+    Hn varchar(20) not null,
+    Pn varchar(20) not null
+) -> *******입력완료 !!!!!!!*******
+
+
+*table06 - 
+create table notice(
+    n_no int primary key auto_increment,
+    title varchar(80) not null,
+    writer varchar(30) not null,
+    date datetime not null,
+    description varchar(1000) not null
+);
+
+-- sec04 부분 생략
+<section id="sec04" class="homeNdeco">
+            <h2>HOME & DECO</h2>
+            <!-- php에서 받아온 값 가져오기 -->
+            <div id="line01" class="lines">
+                <div id="prod01"class="prod">
+                    <div id="prod_top" class="prod_top">
+                        <!-- 이미지 -->
+                        <!-- <img src="<?=$row['imgsrc']?>" alt="best01"> -->
+                        <img src="/cozysleep/img/main/prod01.jpg" alt="">
+                    </div>
+                    <div id="prod_bot">
+                        <p>
+                            <!-- 이름 -->
+                            <!-- <?=$row['name']?> -->
+                            도즈 60수 고밀도순면 차렵이불-크림(SS/Q/K)
+                        </p>
+                        <p>
+                            <!-- 가격 -->
+                            <!-- <?=$row['price']?> -->
+                            51,900 (48%)
+                        </p>
+                        <p>
+                            <!-- 짧은 설명 -->
+                            <!-- <?=$row['shortDesc']?> -->
+                            햇빛을 가득 받아 포삭포삭해진 이불의 촉감
+                        </p>
+                    </div>
+                </div>
+                <div id="prod02" class="prod">
+                    <div id="prod_top" class="prod_top">
+                        <!-- 이미지 -->
+                        <!-- <img src="<?=$row['imgsrc']?>" alt="best01"> -->
+                        <img src="/cozysleep/img/main/prod02.jpg" alt="">
+                    </div>
+                    <div id="prod_bot">
+                        <p>
+                            <!-- 이름 -->
+                            <!-- <?=$row['name']?> -->
+                            도즈 60수 고밀도순면 차렵이불-크림(SS/Q/K)
+                        </p>
+                        <p>
+                            <!-- 가격 -->
+                            <!-- <?=$row['price']?> -->
+                            51,900 (48%)
+                        </p>
+                        <p>
+                            <!-- 짧은 설명 -->
+                            <!-- <?=$row['shortDesc']?> -->
+                            햇빛을 가득 받아 포삭포삭해진 이불의 촉감
+                        </p>
+                    </div>
+                </div>
+                <div id="prod03"  class="prod">
+                    <div id="prod_top" class="prod_top">
+                        <!-- 이미지 -->
+                        <!-- <img src="<?=$row['imgsrc']?>" alt="best01"> -->
+                        <img src="/cozysleep/img/main/prod03.jpg" alt="">
+                    </div>
+                    <div id="prod_bot">
+                        <p>
+                            <!-- 이름 -->
+                            <!-- <?=$row['name']?> -->
+                            도즈 60수 고밀도순면 차렵이불-크림(SS/Q/K)
+                        </p>
+                        <p>
+                            <!-- 가격 -->
+                            <!-- <?=$row['price']?> -->
+                            51,900 (48%)
+                        </p>
+                        <p>
+                            <!-- 짧은 설명 -->
+                            <!-- <?=$row['shortDesc']?> -->
+                            햇빛을 가득 받아 포삭포삭해진 이불의 촉감
+                        </p>
+                    </div>
+                </div>
+                <div id="prod04"  class="prod">
+                    <div id="prod_top" class="prod_top">
+                        <!-- 이미지 -->
+                        <!-- <img src="<?=$row['imgsrc']?>" alt="best01"> -->
+                        <img src="/cozysleep/img/main/prod04.jpg" alt="">
+                    </div>
+                    <div id="prod_bot">
+                        <p>
+                            <!-- 이름 -->
+                            <!-- <?=$row['name']?> -->
+                            도즈 60수 고밀도순면 차렵이불-크림(SS/Q/K)
+                        </p>
+                        <p>
+                            <!-- 가격 -->
+                            <!-- <?=$row['price']?> -->
+                            51,900 (48%)
+                        </p>
+                        <p>
+                            <!-- 짧은 설명 -->
+                            <!-- <?=$row['shortDesc']?> -->
+                            햇빛을 가득 받아 포삭포삭해진 이불의 촉감
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="line02" class="lines">
+                <div id="prod05"class="prod">
+                    <div id="prod_top" class="prod_top">
+                        <!-- 이미지 -->
+                        <!-- <img src="<?=$row['imgsrc']?>" alt="best01"> -->
+                        <img src="/cozysleep/img/main/prod01.jpg" alt="">
+                    </div>
+                    <div id="prod_bot">
+                        <p>
+                            <!-- 이름 -->
+                            <!-- <?=$row['name']?> -->
+                            도즈 60수 고밀도순면 차렵이불-크림(SS/Q/K)
+                        </p>
+                        <p>
+                            <!-- 가격 -->
+                            <!-- <?=$row['price']?> -->
+                            51,900 (48%)
+                        </p>
+                        <p>
+                            <!-- 짧은 설명 -->
+                            <!-- <?=$row['shortDesc']?> -->
+                            햇빛을 가득 받아 포삭포삭해진 이불의 촉감
+                        </p>
+                    </div>
+                </div>
+                <div id="prod06" class="prod">
+                    <div id="prod_top" class="prod_top">
+                        <!-- 이미지 -->
+                        <!-- <img src="<?=$row['imgsrc']?>" alt="best01"> -->
+                        <img src="/cozysleep/img/main/prod02.jpg" alt="">
+                    </div>
+                    <div id="prod_bot">
+                        <p>
+                            <!-- 이름 -->
+                            <!-- <?=$row['name']?> -->
+                            도즈 60수 고밀도순면 차렵이불-크림(SS/Q/K)
+                        </p>
+                        <p>
+                            <!-- 가격 -->
+                            <!-- <?=$row['price']?> -->
+                            51,900 (48%)
+                        </p>
+                        <p>
+                            <!-- 짧은 설명 -->
+                            <!-- <?=$row['shortDesc']?> -->
+                            햇빛을 가득 받아 포삭포삭해진 이불의 촉감
+                        </p>
+                    </div>
+                </div>
+                <div id="prod07"  class="prod">
+                    <div id="prod_top" class="prod_top">
+                        <!-- 이미지 -->
+                        <!-- <img src="<?=$row['imgsrc']?>" alt="best01"> -->
+                        <img src="/cozysleep/img/main/prod03.jpg" alt="">
+                    </div>
+                    <div id="prod_bot">
+                        <p>
+                            <!-- 이름 -->
+                            <!-- <?=$row['name']?> -->
+                            도즈 60수 고밀도순면 차렵이불-크림(SS/Q/K)
+                        </p>
+                        <p>
+                            <!-- 가격 -->
+                            <!-- <?=$row['price']?> -->
+                            51,900 (48%)
+                        </p>
+                        <p>
+                            <!-- 짧은 설명 -->
+                            <!-- <?=$row['shortDesc']?> -->
+                            햇빛을 가득 받아 포삭포삭해진 이불의 촉감
+                        </p>
+                    </div>
+                </div>
+                <div id="prod08"  class="prod">
+                    <div id="prod_top" class="prod_top">
+                        <!-- 이미지 -->
+                        <!-- <img src="<?=$row['imgsrc']?>" alt="best01"> -->
+                        <img src="/cozysleep/img/main/prod04.jpg" alt="">
+                    </div>
+                    <div id="prod_bot">
+                        <p>
+                            <!-- 이름 -->
+                            <!-- <?=$row['name']?> -->
+                            도즈 60수 고밀도순면 차렵이불-크림(SS/Q/K)
+                        </p>
+                        <p>
+                            <!-- 가격 -->
+                            <!-- <?=$row['price']?> -->
+                            51,900 (48%)
+                        </p>
+                        <p>
+                            <!-- 짧은 설명 -->
+                            <!-- <?=$row['shortDesc']?> -->
+                            햇빛을 가득 받아 포삭포삭해진 이불의 촉감
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+-- sec04부분 css 생략
+
+/* sec04 */
+#sec04 {
+    width: 80%;
+    margin: 0 auto;
+}
+#sec04 > h2 {
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 1px;
+    padding-bottom: 35px;
+}

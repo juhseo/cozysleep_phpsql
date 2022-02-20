@@ -1,0 +1,46 @@
+main{
+    padding-top: 100px;
+}
+#sec01 {
+    margin: 50px 0 50px 0px;
+}
+
+#sec01 h2 {
+    margin: 0 0 20px 30px;
+}
+#sec01 table {
+    border-collapse: collapse;
+    width: 95%;
+    margin-left: 30px;
+}
+#sec01 > table, td {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+#sec01 td {
+    padding: 16px;
+}
+.topinp{
+    width: 200px;
+    height: 25px;
+}
+.writebutton{
+    width: 150px;
+    height: 30px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    float:right;
+    margin-left: 10px;
+}
+.writebutton:nth-child(1){
+    background-color: #f1f1f1;
+    color: #111;
+}
+.writebutton:nth-child(2){
+    background-color: #b7a591;
+}
+.writebutton:nth-child(3){
+    background-color: #b7a591;
+}

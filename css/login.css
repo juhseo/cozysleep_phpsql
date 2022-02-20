@@ -1,0 +1,133 @@
+* { margin: 0; padding: 0; box-sizing: border-box;}
+a {text-decoration: none; color: inherit;}
+li {list-style: none;}
+
+main{
+    width: 100%;
+    height: 100vh;
+    background-color: #f1f1f1;
+    padding-top: 100px;
+}
+#main_wrap{
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+#loginpage{
+    display: flex;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 70px 0;
+    align-items: center;
+}
+#loginpage > span {
+    height: 500px;
+    border: 1px solid #ccc;
+    margin: 0 30px;
+}
+#main_l h3{
+    padding-bottom: 80px;
+    color: #474852;
+    font-size: 20px;
+    font-weight: bold;
+}
+#main_r > table{
+    margin: 0 auto;
+}
+#r_top{
+    text-align: center;
+}
+#r_top> h3{
+    padding-bottom: 30px;
+    color: #474852;
+    font-size: 20px;
+    font-weight: bold;
+}
+#r_top > h4 > a{
+    color: #bfbfbf;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+#r_top > h4 > a > p:first-child{
+    color: #000;
+    font-weight: bold;
+    font-size: 12px;
+}
+table input {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0;
+    width: 300px;
+}
+.input_t > td {
+    color: #ccc;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 15px 0 35px 0;
+}
+.button_t > td > button {
+    background-color: #474852;
+    color: #fff;
+    font-weight: bold;
+    width: 300px;
+    border: 1px solid #474852;
+    padding: 15px 0;
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+.button_t > td > button:hover {
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+    width: 300px;
+    border: 1px solid #474852;
+    padding: 15px 0;
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+#r_bottom > h4 {
+    display: flex;
+    color: #bfbfbf;
+    font-size: 12px;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+#r_bottom > h4 > p:first-child{
+    color: #000;
+    font-weight: bold;
+    font-size: 12px;
+}
+#kakao{
+    background-color: #ffe500;
+    color: #000;
+    font-weight: bold;
+    width: 300px;
+    border: 1px solid #ffe500;
+    padding: 15px 0;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+#naver{
+    background-color: #04cf5c;
+    color: #fff;
+    font-weight: bold;
+    width: 300px;
+    border: 1px solid #04cf5c;
+    padding: 15px 0;
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+#r_bottom > button:hover{
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+    width: 300px;
+    border: 1px solid #474852;
+    padding: 15px 0;
+    font-size: 15px;
+}

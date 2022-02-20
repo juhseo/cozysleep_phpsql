@@ -1,0 +1,124 @@
+main {
+    padding-top: 100px;
+    width: 70%;
+    margin: 0 auto;
+}
+#bedd_subb{
+    display: flex;
+    color: #999;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 10px 0;
+}
+#b_detail {
+    display: flex;
+    justify-content: space-between;
+}
+#detail_r_t{
+    padding: 10px 0;
+}
+#detail_r_t > h4{
+    padding-bottom: 30px;
+}
+#detail_r_t > p {
+    font-size: 14px;
+    color: #999;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+#detail_r_m01 {
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+}
+#tb01 tr td:nth-child(1){
+    color: #999;
+    font-weight: bold;
+    font-size: 14px;
+}
+#tb01 tr td:nth-child(2){
+    color: #000;
+    font-weight: bold;
+    font-size: 14px;
+}
+#detail_r_m02{
+    margin: 20px 0;
+    border-bottom: 1px solid #ccc;
+}
+#detail_r_m02 p:nth-child(1){
+    font-weight: bold;
+    color: #000;
+    font-size: 16px;
+    padding-bottom: 30px;
+}
+#detail_r_m02 p:nth-child(2){
+    font-weight: bold;
+    color: #999;
+    font-size: 14px;
+    line-height: 1.8;
+    padding-bottom: 20px;
+}
+#tb02 {
+    padding-bottom: 50px;
+}
+#tb02 tr:nth-child(1)>td{
+    font-weight: bold;
+    color: #000;
+    font-size: 16px;
+    padding-bottom: 30px;
+}
+#tb02 tr:nth-child(2) > td:nth-child(1){
+    color: #999;
+    font-weight: bold;
+    font-size: 14px;
+}
+#tb02 tr:nth-child(3) > td:nth-child(1){
+    color: #999;
+    font-weight: bold;
+    font-size: 14px;
+}
+#detail_r_b button:nth-child(1){
+    width: 49%;
+    height: 50px;
+    background-color: #b7a591;
+    color: #fff;
+    border: 1px solid #b7a591;
+    font-weight: bold;
+    cursor: pointer;
+}
+#detail_r_b button:nth-child(2){
+    width: 49%;
+    height: 50px;
+    background-color: #999;
+    color: #fff;
+    border: 1px solid#999;
+    font-weight: bold;
+    cursor: pointer;
+}
+#detail_r_b > div{
+    width: 90%;
+    margin-top: 30px;
+}
+.show {
+    opacity: 1;
+    z-index:1000;
+    transition: all .5s;
+}
+.popup{
+    border: 1px solid #ccc;
+    background-color: coral;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform:translate(-50%,-40%);
+    background-color: #fff;
+    box-shadow: 0 2px 7px rgba(0,0,0,0.3);
+    width: 300px;
+    height: auto;
+}
+
+#show .popup{
+    transform:translate(-50%,-50%);
+    transition: all .5s;
+}
