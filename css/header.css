@@ -1,0 +1,103 @@
+/* header */
+* { margin: 0; padding: 0; box-sizing: border-box;}
+a {text-decoration: none; color: inherit;}
+li {list-style: none;}
+
+#hd01{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    position: fixed;
+    background-color: #fff;
+    z-index: 100;
+}
+#hd_left {
+    display: flex;
+    align-items: center;
+}
+#hd_left > span {
+    padding: 0 30px;
+    font-size: 32px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#hd_left > span.on{
+    transform: rotate(-90deg);
+}
+h1 {
+    font-family: 'Supermercado One', cursive;
+    /* font-family: 'Lobster', cursive; */
+    font-size: 40px;
+}
+h3 {
+    color: #999795;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0 0 30px 30px;
+}
+#hd_rig {
+    padding-right: 30px;
+}
+#hd_rig > span:not(:last-child){
+    padding-right: 15px;
+}
+#menu_sub {
+    position: fixed;
+    top: 10%;
+    background-color: #fff;
+    z-index: 2;
+    width: 100%;
+    height: auto;
+    display: none;
+}
+#menu_sub.on{
+    display: block;
+    border-bottom: 1px solid #ccc;
+}
+#t_sub {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0;
+}
+#t_sub > li > a{
+    color: #5d5d5d;
+    font-weight: bold;
+}
+#t_sub > li a:hover{
+    text-decoration: underline;
+    color: #000;
+}
+.icons> span:hover{
+    cursor: pointer;
+}
+.m_submenu{
+    position: absolute;
+    text-align: center;
+    font-size: 13px;
+    border: 1px solid #000;
+    background-color: #fff;
+    transition: 0.5s;
+    display:none;
+    right: 2%;
+    z-index: 100;
+}
+#i02:hover .m_submenu{
+    display:block;
+    cursor: pointer;
+}
+.m_submenu li{
+    padding: 10px 15px;
+}
+.m_submenu li:not(:last-child){
+    padding-bottom: 5px;
+}
+.m_submenu li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.iz:nth-child(1) button{
+    background-color: #fff;
+}

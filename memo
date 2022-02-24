@@ -10,38 +10,40 @@ create table bestseller(
     manufacture varchar(50) not null,
     imgsrc varchar(80) not null,
     shortDesc varchar(80) not null,
-    description varchar(80) not null
+    description varchar(999) not null
 ); -> *******입력완료 !!!!!!!*******
-
 
 * table02 - 침구류 bedding
 create table bedding(
-    no int primary key auto_increment,
+    m_no int primary key auto_increment,
     name varchar(90) not null,
     price varchar(20) not null,
     manufacture varchar(50) not null,
     imgsrc varchar(80) not null,
     shortDesc varchar(80) not null,
-    description varchar(80) not null
-)
-<!-- * table03 -고객 customer
+    description varchar(999) not null
+); -> *******입력완료 !!!!!!!*******
+
+* table03 -고객 customer
 create table customer(
     m_no int primary key auto_increment,
     id varchar(10) not null,
     pw varchar(10) not null,
     name varchar(20) not null,
     date datetime not null,
-); -->
-*table04 - 홈 & 데코
-create table homedeco(
-    id int primary key auto_increment,
+); -> *******입력완료 !!!!!!!*******
+
+*table04 - 러그 앤 카페트
+create table rugNcarpet(
+    m_no int primary key auto_increment,
     name varchar(90) not null,
-    price int not null,
+    price varchar(20) not null,
     manufacture varchar(50) not null,
     imgsrc varchar(80) not null,
     shortDesc varchar(80) not null,
-    description varchar(80) not null
-);
+    description varchar(999) not null
+); -> *******입력완료 !!!!!!!*******
+
 *table05 - 회원가입
 create table member(
     m_no int primary key auto_increment,
@@ -51,7 +53,7 @@ create table member(
     email varchar(50) not null,
     Hn varchar(20) not null,
     Pn varchar(20) not null
-) -> *******입력완료 !!!!!!!*******
+); -> *******입력완료 !!!!!!!*******
 
 
 *table06 - 
@@ -61,8 +63,70 @@ create table notice(
     writer varchar(30) not null,
     date datetime not null,
     description varchar(1000) not null
+); -> *******입력완료 !!!!!!!*******
+
+*table07 -
+create table cart (
+    id int primary key auto_increment,
+    p_img varchar(100) not null,
+    p_name varchar(100) not null,
+    price varchar(100) not null,
+    date date not
 );
 
+// 장바구니
+create table cart(
+    id int primary key auto_increment,
+    prd_num int not null,
+    prd_id int,
+    custom_id int,
+    total_price varchar(10000) not null,
+    FOREIGN KEY(custom_id) REFERENCES member(m_no),
+    FOREIGN KEY(prd_id) REFERENCES bestseller(m_no)
+);
+
+장바구니에 담을때 insert이용해서 cart에 넣어두기
+
+
+create table member(
+    m_no int primary key auto_increment,
+    name varchar(30) not null,
+    id varchar(8) not null,
+    pw varchar(8) not null,
+    email varchar(50) not null,
+    Hn varchar(20) not null,
+    Pn varchar(20) not null
+); -> *******입력완료 !!!!!!!*******
+
+
+create table cozykids(
+    m_no int primary key auto_increment,
+    name varchar(90) not null,
+    price varchar(20) not null,
+    manufacture varchar(50) not null,
+    imgsrc varchar(80) not null,
+    shortDesc varchar(80) not null,
+    description varchar(999) not null
+);
+create table living(
+    m_no int primary key auto_increment,
+    name varchar(90) not null,
+    price varchar(20) not null,
+    manufacture varchar(50) not null,
+    imgsrc varchar(80) not null,
+    shortDesc varchar(80) not null,
+    description varchar(999) not null
+);
+
+create table homewear(
+    m_no int primary key auto_increment,
+    name varchar(90) not null,
+    price varchar(20) not null,
+    manufacture varchar(50) not null,
+    imgsrc varchar(80) not null,
+    shortDesc varchar(80) not null,
+    description varchar(999) not null
+);
 -- sec04 부분 생략
 <section id="sec04" class="homeNdeco">
             <h2>HOME & DECO</h2>
@@ -278,3 +342,16 @@ create table notice(
     letter-spacing: 1px;
     padding-bottom: 35px;
 }
+
+
+
+
+cart 85
+
+                <!-- <tr>
+                    <td><img src="<?php echo $cart['p_img']?>" alt="상품이미지"></td>
+                    <td><?php echo $cart['price']?></td>
+                    <td>cozysleep</td>
+                    <td><?php echo $cart['date']?></td>
+                    <?php showcart();?>
+                </tr> -->

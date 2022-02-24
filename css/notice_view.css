@@ -10,6 +10,7 @@ main{
 #sec01 h2 {
     margin: 0 0 80px 0;
     text-align: center;
+    padding-bottom: 120px;
 }
 #sec01 table {
     border-collapse: collapse;

@@ -55,6 +55,42 @@ h1 {
     justify-content: space-between;
     padding: 20px 10px;
     align-items: center;
+    margin-bottom: 50px;
+}
+#bann_img{
+    width: 100%;
+}
+#hd_l {
+    display:flex;
+    align-items: center;
+}
+#hd_l > p:first-child{
+    color: #000;
+    font-weight: bold;
+    font-size: 22px;
+    padding-right: 5px;
+}
+#hd_l > p:nth-child(2){
+    font-size: 14px;
+}
+#hd_r {
+    display: flex;
+    color: #5d5d5d;
+    font-size: 12px;
+}
+#hd_r > p:first-child{
+    color: #000;
+    font-weight: bold;
+}
+#hd_r > p:not(:last-child){
+    padding-right: 20px;
+}
+.lines{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
 }
 /* footer */
 #footer{

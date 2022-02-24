@@ -67,6 +67,11 @@ main{
 table{
     margin: 0 auto;
 }
+.tds{
+    font-size: 14px;
+    color:#474852;
+    font-weight: bold;
+}
 .td_input{
     border: none;
     border-bottom: 1px solid #ccc;
@@ -74,6 +79,7 @@ table{
 }
 form > div {
     text-align: center;
+    margin-top: 50px;
 }
 .formbtn{
     background-color: #474852;

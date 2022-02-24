@@ -6,10 +6,6 @@
     $conn = mysqli_connect('localhost','root','1234','cozysleep');
     $sqlstr = "insert into notice(title,writer,description,date)
         values('{$title}','{$writer}','{$desc}',NOW())";
-    
-    // $sqlstr = "insert into notice(title,writer,created,description)
-    //     values('{$_POST['title']}','{$_POST['writer']}',NOW(),'{$_POST['desc']}')";
-    // $result = mysqli_query($conn, $sqlstr);
     $result = mysqli_query($conn, $sqlstr);
     if($result){
         echo '성공';

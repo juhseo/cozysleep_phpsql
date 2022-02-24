@@ -1,0 +1,36 @@
+진행상황
+
+(02-24)
+1. delete 수정부분
+view
+    - line29 form action 수정
+    - line30 input GET방식 변경
+    - include 주소 수정
+delete
+    - line03 POST방식 변경
+edit 
+    - line25 form action 변경
+    - line26 input 다시 확인
+
+** subpage : cozykids/homewear/living/rugNcarpet 수정하기
+
+-> All 수정완료 !!
+
+//오류사항
+1. 러그앤 카페트 수정 안됨 -> 완
+2. 홈웨어 글 수정 누르면 삭제됨.->완
+
+
+
+2. session 연결해서 장바구니 구현
+
+3. 데이터 긁어와서 넣기 -> 완
+
+4. 게시판 1,2,3페이지 구현
+
+5. 상품 갯수 표시하기. -> 완
+
+6. 게시판 댓글 구현
+
+
+

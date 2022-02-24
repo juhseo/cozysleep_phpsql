@@ -11,6 +11,9 @@ main {
     font-weight: bold;
     margin: 10px 0;
 }
+form {
+    margin-bottom: 50px;
+}
 #b_detail {
     display: flex;
     justify-content: space-between;
@@ -77,6 +80,11 @@ main {
     font-weight: bold;
     font-size: 14px;
 }
+#tb02 tr:nth-child(4) > td:nth-child(1){
+    color: #999;
+    font-weight: bold;
+    font-size: 14px;
+}
 #detail_r_b button:nth-child(1){
     width: 49%;
     height: 50px;
@@ -86,7 +94,7 @@ main {
     font-weight: bold;
     cursor: pointer;
 }
-#detail_r_b button:nth-child(2){
+#detail_r_b > input{
     width: 49%;
     height: 50px;
     background-color: #999;
@@ -99,6 +107,8 @@ main {
     width: 90%;
     margin-top: 30px;
 }
+
+
 .show {
     opacity: 1;
     z-index:1000;

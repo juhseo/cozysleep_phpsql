@@ -4,7 +4,6 @@ main{
 #sec01 {
     margin: 50px 0 50px 0px;
 }
-
 #sec01 h2 {
     margin: 0 0 20px 30px;
 }
@@ -19,6 +18,9 @@ main{
 }
 #sec01 td {
     padding: 16px;
+}
+#bann_img > img{
+    width: 100%;
 }
 .topinp{
     width: 200px;
